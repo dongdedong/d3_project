@@ -1,0 +1,114 @@
+<html>  
+  <head>  
+        <meta charset="utf-8">  
+        <title>颜色渐变——差值</title>
+  </head>
+  <style>
+
+      .nodeRect {
+          stroke: white;
+          stroke-width: 2px;
+      }
+
+      .nodeName {
+          fill: white;
+          font-size: 12px;
+          font-family: simsun;
+      }
+
+  </style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../js/multext.js"></script>
+<script>
+
+
+    var width = 400,
+        height = 400;
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var a = d3.rgb(255,0,0);	//红色
+    var b = d3.rgb(0,255,0);	//绿色
+
+    var compute = d3.interpolate(a,b);
+
+  /*  如此一来，compute 可当做函数使用，参数的范围为[0, 1]。compute(0) 返回红色，compute(1) 返回绿色
+    ，传入 0 ~ 1 之间的值时，返回红色到绿色之间的插值颜色。
+
+    有时候，某个值域的范围并不在 0 到 1 之间，例如在 0 到 150 之间，怎么讲二者对应起来呢？
+    使用一个线性比例尺即可，定义如下，*/
+
+    var linear = d3.scale.linear()
+        .domain([0,150])
+        .range([0,1]);
+
+    var rects = svg.selectAll("rect")
+        .data(d3.range(150))
+        .enter()
+        .append("rect")
+        .attr("x",function(d,i){
+            return i%15 * 15;
+        })
+        .attr("y",function(d,i){
+            return Math.floor(i/15) * 15;
+        })
+        .attr("width",15)
+        .attr("height",15)
+        .style("fill",function(d){
+            return compute(linear(d));
+        })
+        .on("mouseover",function(d){
+            d3.select(this)
+                .style("fill","yellow");
+        })
+        .on("mouseout",function(d){
+            d3.select(this)
+                .style("fill",compute(linear(d)).toString());
+        });
+
+
+    //定义一个线性渐变
+    //渐变也是定义在<defs>标签中的，然后给渐变定义一个id号，在需要使用的图形上调用此id号即可。
+    var defs = svg.append("defs");
+
+    var linearGradient = defs.append("linearGradient")
+        .attr("id","linearColor")
+        .attr("x1","0%")
+        .attr("y1","0%")
+        .attr("x2","100%")
+        .attr("y2","0%");
+
+    var stop1 = linearGradient.append("stop")
+        .attr("offset","0%")
+        .style("stop-color",a.toString());
+
+    var stop2 = linearGradient.append("stop")
+        .attr("offset","100%")
+        .style("stop-color",b.toString());
+
+    //添加一个矩形，并应用线性渐变
+    var colorRect = svg.append("rect")
+        .attr("x", 15)
+        .attr("y", 200)
+        .attr("width", 200)
+        .attr("height", 30)
+        .style("fill","url(#" + linearGradient.attr("id") + ")")
+        .on("mouseover",function(d){
+            d3.select(this)
+                .style("fill","yellow");
+        })
+        .on("mouseout",function(d){
+            d3.select(this)
+                .style("fill","url(#" + linearGradient.attr("id") + ")");
+        });
+
+
+
+
+</script>
+	
+</body>  
+</html>  

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D3JS第一个入门例子</title>
+    <script src="../js/d3.js"></script>
+</head>
+<body>
+<p>hello world</p>
+<p>hello world</p>
+
+<script>
+    var p=d3.select("body").selectAll("p").text("你好，世界。。来自D3的第一声问候");
+
+    //修改段落的颜色和字体
+    p.style("color","blue").style("font-size","70px");
+</script>
+</body>
+</html>

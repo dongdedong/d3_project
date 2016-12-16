@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比例尺2</title>
+    <script src="../js/d3.js"></script>
+</head>
+<body>
+
+<script>
+    var width=300;
+    var height = 300;
+
+    var svg =d3.select("body")
+                .append("svg")
+                .attr("width",width)
+                .attr("height",height);
+
+    var dataset = [ 2.5 , 2.1 , 1.7 , 1.3 , 0.3 ];
+
+    var linear = d3.scaleLinear()
+                    .domain([0, d3.max(dataset)])
+                    .range([0, 250]);
+
+    var rectHeight =25;
+
+
+    /*x：矩形左上角的 x 坐标
+    y：矩形左上角的 y 坐标
+    width：矩形的宽度
+    height：矩形的高度*/
+
+    svg.selectAll("rect")//选择svg内所有的矩形
+        .data(dataset)  //绑定数组
+        .enter()        //指定选择集的enter部分，enter()数的作用是返回一个新的D3()对象集合，这个集合包含了所有没有被可视化啊的数据。这是D3将数据与图形的联系定义的一种模式
+        .append("rect") //添加足够数量的矩形元素
+        .attr("x",20)
+        .attr("y",function (d,i) {
+            return i*rectHeight;
+        })
+        .attr("width",function (d) {
+            return linear(d);   //将固定px换成比例尺数据
+        })
+        .attr("height",rectHeight-2)
+        .attr("fill","steelblue");
+
+
+   /* 添加了元素之后，就需要分别给各元素的属性赋值。在这里用到了 function(d, i)，
+    前面已经讲过，d 代表与当前元素绑定的数据，i 代表索引号。
+    给属性赋值的时候，是需要用到被绑定的数据，以及索引号的。*/
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比例尺初步</title>
+    <script src="../js/d3.js"></script>
+</head>
+<body>
+
+<script>
+
+    var dataset = [1.2, 2.3, 0.9, 1.5, 3.3];
+
+    var min = d3.min(dataset);
+    var max = d3.max(dataset);
+
+    var linear = d3.scaleLinear()
+        .domain([min, max])
+        .range([0, 300]);
+
+    var temp1=linear(0.9);	//返回 0
+    var temp2=linear(2.3);	//返回 175
+    var temp3=linear(3.3);	//返回 300
+
+
+    var index = [0, 1, 2, 3, 4];
+    var color = ["red", "blue", "green", "yellow", "black"];
+
+    var ordinal = d3.scaleOrdinal()
+        .domain(index)
+        .range(color);
+
+    var temp4=ordinal(0);	//返回 red
+    var temp5=ordinal(2);	//返回 green
+    var temp6=ordinal(4);	//返回 black
+
+</script>
+</body>
+</html>

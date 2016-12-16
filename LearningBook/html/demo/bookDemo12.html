@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>符号生成器</title>
+    <style>
+        .axis path, .axis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+    var width = 600;
+    var height = 600;
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    console.log(d3.svg.symbolTypes);
+
+    var n= 30;
+    var dataset=[];
+    for(var i=0;i<n;i++){
+        dataset.push({
+            size:Math.random()*30+200,
+            type:d3.svg.symbolTypes[Math.floor(Math.random()*d3.svg.symbolTypes.length)]
+        })
+    }
+
+    //创建一个符号生成器
+    var symbol = d3.svg.symbol()
+        .size(function (d) {
+            return d.size;
+        })
+        .type(function (d) {
+            return d.type;
+        });
+
+    var color = d3.scale.category20b();
+
+    svg.selectAll()
+        .data(dataset)
+        .enter()
+        .append("path")
+        .attr("d",function (d) {
+            return symbol(d);
+        })
+        .attr("transform",function (d,i) {
+            var x = 100+i%5*20;
+            var y = 100+Math.floor(i/5)*20;
+            return "translate("+x+","+y+")";
+        })
+        .attr("fill",function (d,i) {
+            return color(i);
+        })
+</script>
+
+
+</body>
+</html>
+
+

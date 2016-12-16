@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>量子、分位比例尺</title>
+</head>
+<body>
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+  var quantize = d3.scale.quantize()
+      .domain([0,10])
+      .range(["red","green","blue","yellow","black"]);
+
+  console.log(quantize(1));
+  console.log(quantize(3));
+  console.log(quantize(5.9999));
+  console.log(quantize(6));
+  console.log(quantize(9));
+</script>
+</body>
+</html>

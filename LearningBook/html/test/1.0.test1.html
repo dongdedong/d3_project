@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+</head>
+<body>
+<p>11</p>
+<p>11</p>
+<p>11</p>
+
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+
+    var p = d3.select("body").selectAll("p");
+
+//    p.datum(7);
+
+    p.datum("thread")
+        .append("span") //每个p元素后面都加一个span标签
+        .text(function (d,i) {
+            return "  "+d;
+
+        })
+    console.log(p);
+
+</script>
+</body>
+</html>

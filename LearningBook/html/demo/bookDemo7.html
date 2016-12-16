@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线段生成器</title>
+    <style>
+        .axis path, .axis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+
+        .axis text {
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+    var width = 400;
+    var height = 400;
+
+    var svg = d3.select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var padding = {top: 20, right: 20, bottom: 20, left: 40};
+
+    var xAxisWidth = 300;
+    var yAxisWidth = 300;
+
+    //第一种画线方式
+  /*  svg.append("line")
+        .attr("x1",20)
+        .attr("y1",20)
+        .attr("x2",300)
+        .attr("y2",100)
+        .attr("stroke","black")
+        .attr("stroke-width","2px")
+        .attr("fill","none");
+*/
+
+    //第二种画线方式
+    /*  svg.append("path")
+     .attr("d","M20,20L300,300")
+     .attr("stroke","black")
+     .attr("stroke-width","2px")
+     .attr("fill","none");*/
+
+
+    //第三种画线方式
+    //线段点数据
+    var lines = [[80,80],[200,100],[200,80],[180,180],[100,80]];
+    //创建一个线段生成器
+    var linePath = d3.svg.line();
+    //添加路径
+      svg.append("path")
+     .attr("d",linePath(lines))
+     .attr("stroke","black")
+     .attr("stroke-width","2px")
+     .attr("fill","none");
+
+</script>
+
+
+</body>
+</html>

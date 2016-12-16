@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比例尺</title>
+</head>
+<body>
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+    /*var linear = d3.scale.linear()      //创建一个线性比例尺
+                    .domain([0,500])    //定义域
+                    .range([0,100]);    //值域
+
+    console.log(linear(50));
+    console.log(linear(250));
+    console.log(linear(450));
+    console.log(linear.invert(50));//250 给一个值域的值，返回一个定义域的值
+*/
+
+   /* var linear = d3.scale.linear()
+        .domain([-20,20])
+        .range([0,100]);
+    var ticks = linear.ticks(5);
+    console.log(ticks);
+
+    var tickFormat = linear.tickFormat(5,"+");
+    for( var i=0;i<ticks.length;i++){
+        //ticks数组中的每一个值都使用一次tickFormat()函数
+        ticks[i] = tickFormat(ticks[i]);
+    }
+    console.log(ticks);*/
+
+
+    /*当输入值为0-20时，用0-100的值域表示，
+    * 当输入值为20-30时，用100-150的值域表示*/
+   var scale = d3.scale.linear();
+   scale.domain([0,20,40])
+       .range([0,100,150]);
+   var result = scale(30); //返回125
+</script>
+</body>
+</html>

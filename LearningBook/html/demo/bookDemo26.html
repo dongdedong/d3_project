@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据转换绘制饼图</title>
+    <style>
+        .axis path,.axis line{
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+        .axis text{
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+<div style="padding: 50;background-color: gray"></div>
+
+<script type="text/javascript" src="../../js/d3_3.5.17.js"></script>
+<script>
+    var width = 600;
+    var height = 600;
+
+    var svg = d3.select("div")
+        .append("svg")
+        .style("background-color","yellow")
+        .attr("width",width)
+        .attr("height",height);
+
+
+    var dataset = [["小米",60.8],["三星",58.8],["联想",47.8],["苹果",46.8]
+                    ,["华为",41.8],["酷派",40.8],["其他",111.8] ];
+
+    var pie = d3.layout.pie()   //创建饼图布局
+        .startAngle(Math.PI*0.2)    //可通过控制饼图的起始和终止角度控制饼图形状
+        .endAngle(Math.PI*1.5)
+        .value(function (d) {   //值访问器
+            return d[1];
+        })
+
+
+    var piedata = pie(dataset); //转换数据
+    console.log(piedata);
+
+    //外半径和内半径
+    var outerRadius = width/3;
+    var innerRadius = 0;
+
+    //创建弧生成器
+    var arc = d3.svg.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius);
+
+
+    var color = d3.scale.category20();
+
+    //添加对应数目的弧组，即<g>元素
+    var arcs = svg.selectAll("g")
+        .data(piedata)
+        .enter()
+        .append("g")
+        .attr("transform","translate("+(width/2)+","+(height/2)+")");
+
+    //添加弧的路径元素
+    arcs.append("path")
+        .attr("fill",function (d, i) {
+            return color(i);        //设置弧的颜色
+        })
+        .attr("d",function (d) {
+            return arc(d);      //使用弧生成器获取路径
+        })
+
+    arcs.append("text")
+        .attr("transform",function (d) {
+            var x = arc.centroid(d)[0]*1.4; //文字的x，y轴坐标
+            var y = arc.centroid(d)[1]*1.4;
+            return "translate("+x+","+y+")";
+        })
+        .attr("text-anchor","middle")
+        .text(function (d) {
+            //计算占比
+            var percent = Number(d.value)/d3.sum(dataset,function (d) {
+                return d[1];
+                })*100;
+            //保留一位小数，加上%
+            return percent.toFixed(1)+"%";
+        })
+
+    //添加链接弧外文字的直线元素
+    arcs.append("line")
+        .attr("stroke","black")
+        .attr("x1",function (d) { return arc.centroid(d)[0]*2; })
+        .attr("y1",function (d) { return arc.centroid(d)[1]*2; })
+        .attr("x2",function (d) { return arc.centroid(d)[0]*2.2; })
+        .attr("y2",function (d) { return arc.centroid(d)[1]*2.2; })
+
+    //添加弧外的文字元素
+    arcs.append("text")
+        .attr("transform",function (d) {
+            var x = arc.centroid(d)[0]*2.5;
+            var y = arc.centroid(d)[1]*2.5;
+            return "translate("+x+","+y+")";
+        })
+        .attr("text-anchor","middle")
+        .text(function (d) {
+            return d.data[0];
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+    </body>
+</html>
