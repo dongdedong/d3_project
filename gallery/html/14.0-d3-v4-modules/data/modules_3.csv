@@ -1,0 +1,42 @@
+No.,Module,Class,Content,URL
+0,D3,,d3.js v4.x,http://d3js.org/
+1,Core,D3,v4.x Core Modules,http://github.com/d3/d3
+2,Plugin,D3,v4.x Plugins,https://github.com/d3/d3/wiki/Plugins
+3,d3-array,Core,"Array manipulation, ordering, searching, summarizing, etc.",http://github.com/d3/d3-array
+4,d3-axis,Core,Human-readable reference marks for scales.,http://github.com/d3/d3-axis
+5,d3-brush,Core,Select a one- or two-dimensional region using the mouse or touch.,http://github.com/d3/d3-brush
+6,d3-chord,Core,chord layout.,http://github.com/d3/d3-chord
+7,d3-collection,Core,Handy data structures for elements keyed by string.,http://github.com/d3/d3-collection
+8,d3-color,Core,Color manipulation and color space conversion.,http://github.com/d3/d3-color
+9,d3-dispatch,Core,Separate concerns using named callbacks.,http://github.com/d3/d3-dispatch
+10,d3-drag,Core,"Drag and drop SVG, HTML or Canvas using mouse or touch input.",http://github.com/d3/d3-drag
+11,d3-dsv,Core,"Parse and format delimiter-separated values, most commonly CSV and TSV.",http://github.com/d3/d3-dsv
+12,d3-ease,Core,Easing functions for smooth animation.,http://github.com/d3/d3-ease
+13,d3-force,Core,Force-directed graph layout using velocity Verlet integration.,http://github.com/d3/d3-force
+14,d3-format,Core,Format numbers for human consumption.,http://github.com/d3/d3-format
+15,d3-geo,Core,"Geographic projections, shapes and math.",http://github.com/d3/d3-geo
+16,d3-hierarchy,Core,Layout algorithms for visualizing hierarchical data.,http://github.com/d3/d3-hierarchy
+17,d3-interpolate,Core,"Interpolate numbers, colors, strings, arrays, objects, whatever!",http://github.com/d3/d3-interpolate
+18,d3-path,Core,Serialize Canvas path commands to SVG.,http://github.com/d3/d3-path
+19,d3-polygon,Core,Geometric operations for two-dimensional polygons.,http://github.com/d3/d3-polygon
+20,d3-quadtree,Core,Two-dimensional recursive spatial subdivision.,http://github.com/d3/d3-quadtree
+21,d3-queue,Core,Evaluate asynchronous tasks with configurable concurrency.,http://github.com/d3/d3-queue
+22,d3-random,Core,Generate random numbers from various distributions.,http://github.com/d3/d3-random
+23,d3-request,Core,A convenient alternative to asynchronous XMLHttpRequest.,http://github.com/d3/d3-request
+24,d3-scale,Core,Encodings that map abstract data to visual representation.,http://github.com/d3/d3-scale
+25,d3-selection,Core,Transform the DOM by selecting elements and joining to data.,http://github.com/d3/d3-selection
+26,d3-shape,Core,Graphical primitives for visualization.,http://github.com/d3/d3-shape
+27,d3-time-format,Core,"Parse and format times, inspired by strptime and strftime.",http://github.com/d3/d3-time-format
+28,d3-time,Core,A calculator for humanityâs peculiar conventions of time.,http://github.com/d3/d3-time
+29,d3-timer,Core,An efficient queue for managing thousands of concurrent animations.,http://github.com/d3/d3-timer
+30,d3-transition,Core,Animated transitions for selections.,http://github.com/d3/d3-transition
+31,d3-voronoi,Core,Compute the Voronoi diagram of a given set of points.,http://github.com/d3/d3-voronoi
+32,d3-zoom,Core,"Pan and zoom SVG, HTML or Canvas using mouse or touch input.",http://github.com/d3/d3-zoom
+33,d3-geo-projection,Plugin,extended geographic projections.,http://github.com/d3/d3-geo-projection
+34,d3-hcg,Plugin,the hue-chroma-grayness color space derived from Munsell.,http://github.com/d3/d3-hcg
+35,d3-hexbin,Plugin,group two-dimensional points into hexagonal bins.,http://github.com/d3/d3-hexbin
+36,d3-hsv,Plugin,the hue-saturation-value color space.,http://github.com/d3/d3-hsv
+37,d3-sankey,Plugin,visualize flow between nodes in a directed acyclic network.,http://github.com/d3/d3-sankey
+38,d3-scale-chromatic,Plugin,color schemes derived from ColorBrewer.,http://github.com/d3/d3-scale-chromatic
+39,d3-selection-multi,Plugin,multi-value syntax for selections and transitions.,http://github.com/d3/d3-selection-multi
+40,d3-tile,Plugin,compute the quadtree tiles to display in a rectangular viewport.,http://github.com/d3/d3-tile
