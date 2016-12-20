@@ -1,0 +1,269 @@
+d3.js: start.js compat/index.js arrays/index.js behavior/index.js color/index.js core/index.js dsv/index.js event/index.js format/index.js geo/index.js geom/index.js interpolate/index.js layout/index.js math/index.js scale/index.js selection/index.js svg/index.js time/index.js transition/index.js xhr/index.js end.js
+start.js:
+compat/index.js: compat/date.js compat/style.js
+compat/date.js:
+compat/style.js: core/document.js
+core/document.js: core/array.js
+core/array.js:
+arrays/index.js: arrays/ascending.js arrays/descending.js arrays/min.js arrays/max.js arrays/extent.js arrays/sum.js arrays/mean.js arrays/median.js arrays/quantile.js arrays/bisect.js arrays/shuffle.js arrays/permute.js arrays/pairs.js arrays/zip.js arrays/transpose.js arrays/keys.js arrays/values.js arrays/entries.js arrays/merge.js arrays/range.js arrays/nest.js arrays/map.js arrays/set.js
+arrays/ascending.js:
+arrays/descending.js:
+arrays/min.js:
+arrays/max.js:
+arrays/extent.js:
+arrays/sum.js: math/number.js
+math/number.js:
+arrays/mean.js: math/number.js
+arrays/median.js: math/number.js arrays/ascending.js arrays/quantile.js
+arrays/quantile.js:
+arrays/bisect.js: arrays/ascending.js
+arrays/shuffle.js:
+arrays/permute.js:
+arrays/pairs.js:
+arrays/zip.js: arrays/min.js
+arrays/transpose.js: arrays/zip.js
+arrays/keys.js:
+arrays/values.js:
+arrays/entries.js:
+arrays/merge.js:
+arrays/range.js: math/abs.js
+math/abs.js:
+arrays/nest.js: arrays/map.js
+arrays/map.js: core/class.js
+core/class.js:
+arrays/set.js: core/class.js arrays/map.js
+behavior/index.js: behavior/behavior.js behavior/drag.js behavior/zoom.js
+behavior/behavior.js:
+behavior/drag.js: core/document.js core/rebind.js event/drag.js event/event.js event/mouse.js event/touch.js behavior/behavior.js
+core/rebind.js:
+event/drag.js: core/document.js core/vendor.js selection/on.js
+core/vendor.js:
+selection/on.js: arrays/map.js core/array.js core/document.js core/noop.js event/event.js format/requote.js selection/selection.js
+core/noop.js:
+event/event.js: event/dispatch.js
+event/dispatch.js: arrays/map.js
+format/requote.js:
+selection/selection.js: core/array.js core/document.js core/subclass.js core/vendor.js selection/select.js selection/selectAll.js selection/attr.js selection/classed.js selection/style.js selection/property.js selection/text.js selection/html.js selection/append.js selection/insert.js selection/remove.js selection/data.js selection/datum.js selection/filter.js selection/order.js selection/sort.js selection/on.js selection/each.js selection/call.js selection/empty.js selection/node.js selection/size.js selection/enter.js selection/transition.js selection/interrupt.js
+core/subclass.js:
+selection/select.js: selection/selection.js
+selection/selectAll.js: core/array.js selection/selection.js
+selection/attr.js: core/ns.js selection/selection.js
+core/ns.js:
+selection/classed.js: format/collapse.js format/requote.js selection/selection.js
+format/collapse.js:
+selection/style.js: core/document.js selection/selection.js
+selection/property.js: selection/selection.js
+selection/text.js: selection/selection.js
+selection/html.js: selection/selection.js
+selection/append.js: core/document.js core/ns.js selection/selection.js
+selection/insert.js: selection/selection.js
+selection/remove.js: selection/selection.js
+selection/data.js: arrays/map.js arrays/set.js selection/selection.js
+selection/datum.js: selection/selection.js
+selection/filter.js: selection/selection.js
+selection/order.js: selection/selection.js
+selection/sort.js: arrays/ascending.js selection/selection.js
+selection/each.js: selection/selection.js
+selection/call.js: core/array.js selection/selection.js
+selection/empty.js: selection/selection.js
+selection/node.js: selection/selection.js
+selection/size.js: selection/each.js
+selection/enter.js: core/subclass.js selection/selection.js selection/enter-select.js selection/enter-insert.js
+selection/enter-select.js: selection/selection.js selection/enter.js
+selection/enter-insert.js: selection/selection.js selection/enter.js
+selection/transition.js: selection/selection.js
+selection/interrupt.js: selection/selection.js
+event/mouse.js: core/document.js event/event.js
+event/touch.js: event/event.js event/mouse.js
+behavior/zoom.js: core/document.js core/rebind.js event/drag.js event/event.js event/mouse.js event/touches.js selection/selection.js interpolate/zoom.js behavior/behavior.js
+event/touches.js: core/array.js event/event.js event/mouse.js
+interpolate/zoom.js: math/trigonometry.js
+math/trigonometry.js:
+color/index.js: color/color.js color/rgb.js color/hsl.js color/hcl.js color/lab.js color/xyz.js
+color/color.js:
+color/rgb.js: arrays/map.js color/color.js color/hsl.js color/lab.js color/xyz.js
+color/hsl.js: color/color.js color/rgb.js
+color/lab.js: math/trigonometry.js color/color.js color/hcl.js color/rgb.js
+color/hcl.js: math/trigonometry.js color/color.js color/lab.js color/rgb.js
+color/xyz.js:
+core/index.js: core/functor.js core/ns.js core/rebind.js
+core/functor.js:
+dsv/index.js: dsv/dsv.js dsv/csv.js dsv/tsv.js
+dsv/dsv.js: arrays/set.js xhr/xhr.js
+xhr/xhr.js: core/array.js core/document.js core/identity.js core/rebind.js event/dispatch.js
+core/identity.js:
+dsv/csv.js: dsv/dsv.js
+dsv/tsv.js: dsv/dsv.js
+event/index.js: event/dispatch.js event/event.js event/mouse.js event/touch.js event/touches.js event/timer.js
+event/timer.js: core/document.js core/vendor.js
+format/index.js: format/format.js format/formatPrefix.js format/requote.js format/round.js
+format/format.js: locale/en-US.js
+locale/en-US.js: locale/locale.js
+locale/locale.js: locale/number-format.js locale/time-format.js
+locale/number-format.js: arrays/map.js core/identity.js format/formatPrefix.js format/precision.js format/round.js
+format/formatPrefix.js: format/precision.js format/round.js math/abs.js
+format/precision.js:
+format/round.js:
+locale/time-format.js: arrays/map.js format/requote.js math/abs.js time/day.js time/time.js time/week.js time/interval.js
+time/day.js: time/interval.js time/time.js time/year.js
+time/interval.js: time/time.js
+time/time.js:
+time/year.js: time/day.js time/interval.js time/time.js
+time/week.js: time/day.js time/interval.js time/time.js time/year.js
+geo/index.js: geo/geo.js geo/area.js geo/bounds.js geo/centroid.js geo/circle.js geo/distance.js geo/graticule.js geo/greatArc.js geo/interpolate.js geo/length.js geo/path.js geo/path-area.js geo/path-buffer.js geo/path-centroid.js geo/path-context.js geo/projection.js geo/rotation.js geo/stream.js geo/transform.js geo/albers.js geo/albers-usa.js geo/azimuthal.js geo/azimuthal-equal-area.js geo/azimuthal-equidistant.js geo/conic-conformal.js geo/conic-equal-area.js geo/conic-equidistant.js geo/equirectangular.js geo/gnomonic.js geo/mercator.js geo/orthographic.js geo/stereographic.js geo/transverse-mercator.js
+geo/geo.js:
+geo/area.js: core/noop.js math/adder.js math/trigonometry.js geo/geo.js geo/stream.js
+math/adder.js:
+geo/stream.js: geo/geo.js
+geo/bounds.js: math/abs.js geo/geo.js geo/stream.js geo/area.js geo/cartesian.js geo/spherical.js
+geo/cartesian.js:
+geo/spherical.js: math/abs.js math/trigonometry.js
+geo/centroid.js: core/noop.js math/trigonometry.js geo/geo.js geo/stream.js
+geo/circle.js: math/trigonometry.js geo/cartesian.js geo/geo.js geo/rotation.js geo/spherical.js
+geo/rotation.js: math/trigonometry.js geo/equirectangular.js geo/geo.js
+geo/equirectangular.js: geo/geo.js geo/projection.js
+geo/projection.js: core/identity.js core/rebind.js math/trigonometry.js geo/clip-antimeridian.js geo/clip-circle.js geo/clip-extent.js geo/compose.js geo/geo.js geo/path.js geo/resample.js geo/rotation.js geo/transform.js
+geo/clip-antimeridian.js: core/true.js math/abs.js math/trigonometry.js geo/clip.js
+core/true.js:
+geo/clip.js: arrays/merge.js core/noop.js math/trigonometry.js geo/clip-polygon.js
+geo/clip-polygon.js: math/trigonometry.js geo/spherical.js
+geo/clip-circle.js: math/abs.js math/trigonometry.js geo/cartesian.js geo/clip.js geo/circle.js geo/spherical.js geo/point-in-polygon.js
+geo/point-in-polygon.js: geo/geo.js geo/area.js geo/cartesian.js math/abs.js math/trigonometry.js
+geo/clip-extent.js: arrays/merge.js math/abs.js math/trigonometry.js geom/clip-line.js geo/geo.js geo/clip.js geo/clip-polygon.js
+geom/clip-line.js: math/trigonometry.js
+geo/compose.js:
+geo/path.js: core/identity.js math/trigonometry.js geo/albers-usa.js geo/area.js geo/bounds.js geo/centroid.js geo/geo.js geo/path-area.js geo/path-bounds.js geo/path-buffer.js geo/path-centroid.js geo/path-context.js geo/projection.js geo/resample.js geo/stream.js
+geo/albers-usa.js: geo/albers.js geo/conic-equal-area.js geo/geo.js
+geo/albers.js: geo/conic-equal-area.js geo/geo.js
+geo/conic-equal-area.js: math/trigonometry.js geo/geo.js geo/conic.js geo/projection.js
+geo/conic.js: math/trigonometry.js geo/projection.js
+geo/path-area.js: core/noop.js math/abs.js
+geo/path-bounds.js: core/noop.js
+geo/path-buffer.js:
+geo/path-centroid.js: geo/centroid.js
+geo/path-context.js: core/noop.js math/trigonometry.js
+geo/resample.js: math/abs.js math/trigonometry.js geo/cartesian.js
+geo/transform.js: geo/geo.js core/array.js
+geo/distance.js: math/trigonometry.js geo/geo.js
+geo/graticule.js: arrays/range.js math/abs.js math/trigonometry.js geo/geo.js
+geo/greatArc.js: core/source.js core/target.js geo/geo.js geo/distance.js
+core/source.js:
+core/target.js:
+geo/interpolate.js: math/trigonometry.js geo/geo.js
+geo/length.js: core/noop.js math/abs.js math/trigonometry.js geo/geo.js geo/stream.js
+geo/azimuthal.js:
+geo/azimuthal-equal-area.js: geo/azimuthal.js geo/geo.js geo/projection.js
+geo/azimuthal-equidistant.js: core/identity.js geo/azimuthal.js geo/geo.js geo/projection.js
+geo/conic-conformal.js: math/abs.js math/trigonometry.js geo/conic.js geo/geo.js geo/projection.js
+geo/conic-equidistant.js: math/abs.js math/trigonometry.js geo/conic.js geo/equirectangular.js geo/geo.js geo/projection.js
+geo/gnomonic.js: geo/azimuthal.js geo/geo.js geo/projection.js
+geo/mercator.js: math/trigonometry.js geo/geo.js geo/projection.js
+geo/orthographic.js: geo/azimuthal.js geo/geo.js geo/projection.js
+geo/stereographic.js: geo/azimuthal.js geo/geo.js geo/projection.js
+geo/transverse-mercator.js: math/trigonometry.js geo/geo.js geo/mercator.js
+geom/index.js: geom/geom.js geom/hull.js geom/polygon.js geom/voronoi.js geom/delaunay.js geom/quadtree.js
+geom/geom.js:
+geom/hull.js: core/functor.js math/trigonometry.js geom/geom.js geom/point.js
+geom/point.js:
+geom/polygon.js: core/subclass.js geom/geom.js
+geom/voronoi.js: core/functor.js geom/voronoi/index.js geom/geom.js geom/point.js
+geom/voronoi/index.js: math/trigonometry.js geom/voronoi/beach.js geom/voronoi/cell.js geom/voronoi/circle.js geom/voronoi/clip.js geom/voronoi/edge.js geom/voronoi/red-black.js
+geom/voronoi/beach.js: math/abs.js
+geom/voronoi/cell.js: math/abs.js
+geom/voronoi/circle.js:
+geom/voronoi/clip.js: math/abs.js geom/clip-line.js
+geom/voronoi/edge.js:
+geom/voronoi/red-black.js:
+geom/delaunay.js: geom/geom.js
+geom/quadtree.js: core/functor.js math/abs.js geom/geom.js geom/point.js
+interpolate/index.js: interpolate/array.js interpolate/ease.js interpolate/hcl.js interpolate/hsl.js interpolate/interpolate.js interpolate/lab.js interpolate/number.js interpolate/object.js interpolate/rgb.js interpolate/round.js interpolate/string.js interpolate/transform.js interpolate/uninterpolate.js interpolate/zoom.js
+interpolate/array.js: interpolate/interpolate.js
+interpolate/interpolate.js: color/color.js color/rgb.js interpolate/rgb.js interpolate/object.js interpolate/array.js interpolate/number.js interpolate/string.js
+interpolate/rgb.js: color/rgb.js
+interpolate/object.js: interpolate/interpolate.js
+interpolate/number.js:
+interpolate/string.js: interpolate/number.js
+interpolate/ease.js: arrays/map.js core/array.js core/identity.js math/trigonometry.js
+interpolate/hcl.js: color/hcl.js
+interpolate/hsl.js: color/hsl.js
+interpolate/lab.js: color/lab.js
+interpolate/round.js:
+interpolate/transform.js: math/transform.js interpolate/number.js
+math/transform.js: core/document.js core/ns.js
+interpolate/uninterpolate.js:
+layout/index.js: layout/layout.js layout/bundle.js layout/chord.js layout/force.js layout/partition.js layout/pie.js layout/stack.js layout/histogram.js layout/hierarchy.js layout/pack.js layout/cluster.js layout/tree.js layout/treemap.js
+layout/layout.js:
+layout/bundle.js: layout/layout.js
+layout/chord.js: arrays/range.js math/trigonometry.js layout/layout.js
+layout/force.js: behavior/drag.js core/identity.js core/rebind.js event/event.js event/dispatch.js event/timer.js geom/quadtree.js layout/layout.js
+layout/partition.js: layout/layout.js layout/hierarchy.js
+layout/hierarchy.js: arrays/merge.js core/rebind.js layout/layout.js
+layout/pie.js: arrays/range.js arrays/sum.js math/trigonometry.js layout/layout.js
+layout/stack.js: arrays/map.js arrays/permute.js arrays/range.js core/identity.js layout/layout.js
+layout/histogram.js: arrays/bisect.js arrays/min.js arrays/max.js core/functor.js layout/layout.js
+layout/pack.js: layout/layout.js layout/hierarchy.js
+layout/cluster.js: arrays/max.js layout/layout.js layout/hierarchy.js layout/tree.js
+layout/tree.js: layout/layout.js layout/hierarchy.js
+layout/treemap.js: layout/layout.js layout/hierarchy.js
+math/index.js: math/random.js math/transform.js
+math/random.js:
+scale/index.js: scale/scale.js scale/linear.js scale/log.js scale/pow.js scale/sqrt.js scale/ordinal.js scale/category.js scale/quantile.js scale/quantize.js scale/threshold.js scale/identity.js
+scale/scale.js:
+scale/linear.js: arrays/range.js core/rebind.js interpolate/interpolate.js interpolate/round.js interpolate/uninterpolate.js format/format.js math/abs.js scale/bilinear.js scale/nice.js scale/polylinear.js scale/scale.js
+scale/bilinear.js:
+scale/nice.js: core/identity.js
+scale/polylinear.js: arrays/bisect.js
+scale/log.js: format/format.js scale/linear.js scale/nice.js scale/scale.js
+scale/pow.js: scale/linear.js scale/scale.js
+scale/sqrt.js: scale/pow.js scale/scale.js
+scale/ordinal.js: arrays/map.js arrays/range.js scale/scale.js
+scale/category.js: color/rgb.js scale/ordinal.js scale/scale.js
+scale/quantile.js: arrays/ascending.js arrays/bisect.js arrays/quantile.js math/number.js scale/scale.js
+scale/quantize.js: scale/scale.js
+scale/threshold.js: arrays/bisect.js scale/scale.js
+scale/identity.js: scale/linear.js scale/scale.js
+selection/index.js: selection/selection.js
+svg/index.js: svg/svg.js svg/arc.js svg/line.js svg/line-radial.js svg/area.js svg/area-radial.js svg/chord.js svg/diagonal.js svg/diagonal-radial.js svg/symbol.js svg/axis.js svg/brush.js
+svg/svg.js:
+svg/arc.js: core/functor.js math/trigonometry.js svg/svg.js
+svg/line.js: arrays/map.js core/functor.js core/identity.js core/true.js geom/point.js math/abs.js math/trigonometry.js svg/svg.js
+svg/line-radial.js: svg/arc.js svg/line.js svg/svg.js
+svg/area.js: core/functor.js core/identity.js core/true.js geom/point.js svg/svg.js svg/line.js
+svg/area-radial.js: svg/area.js svg/svg.js svg/line-radial.js
+svg/chord.js: core/functor.js core/source.js core/target.js math/trigonometry.js svg/arc.js svg/svg.js
+svg/diagonal.js: core/functor.js core/source.js core/target.js svg/svg.js
+svg/diagonal-radial.js: svg/arc.js svg/diagonal.js svg/svg.js
+svg/symbol.js: arrays/map.js core/functor.js math/trigonometry.js svg/svg.js
+svg/axis.js: core/identity.js math/trigonometry.js scale/linear.js scale/scale.js selection/selection.js transition/transition.js svg/svg.js
+transition/transition.js: arrays/map.js core/subclass.js core/true.js event/dispatch.js event/timer.js selection/selection.js transition/select.js transition/selectAll.js transition/filter.js transition/attr.js transition/style.js transition/text.js transition/remove.js transition/ease.js transition/delay.js transition/duration.js transition/each.js transition/subtransition.js transition/tween.js
+transition/select.js: selection/select.js transition/transition.js
+transition/selectAll.js: selection/selectAll.js transition/transition.js
+transition/filter.js: selection/filter.js transition/transition.js
+transition/attr.js: core/ns.js interpolate/interpolate.js interpolate/transform.js transition/transition.js transition/tween.js
+transition/tween.js: selection/each.js transition/transition.js
+transition/style.js: core/document.js interpolate/interpolate.js transition/transition.js transition/tween.js
+transition/text.js: transition/transition.js transition/tween.js
+transition/remove.js: transition/transition.js
+transition/ease.js: interpolate/ease.js selection/each.js transition/transition.js
+transition/delay.js: selection/each.js transition/transition.js
+transition/duration.js: selection/each.js transition/transition.js
+transition/each.js: selection/each.js transition/transition.js
+transition/subtransition.js: transition/transition.js
+svg/brush.js: core/identity.js core/document.js core/rebind.js event/drag.js event/event.js event/mouse.js scale/scale.js selection/selection.js svg/svg.js
+time/index.js: time/time.js time/format.js time/format-utc.js time/format-iso.js time/interval.js time/second.js time/minute.js time/hour.js time/day.js time/week.js time/month.js time/year.js time/scale.js time/scale-utc.js
+time/format.js: locale/en-US.js time/time.js
+time/format-utc.js: time/format.js
+time/format-iso.js: time/format.js time/format-utc.js
+time/second.js: time/interval.js time/time.js
+time/minute.js: time/interval.js time/time.js
+time/hour.js: time/interval.js time/time.js
+time/month.js: time/day.js time/interval.js time/time.js
+time/scale.js: arrays/bisect.js arrays/range.js core/identity.js core/true.js scale/linear.js scale/nice.js time/format.js time/day.js time/hour.js time/minute.js time/month.js time/second.js time/time.js time/week.js time/year.js
+time/scale-utc.js: core/true.js scale/linear.js time/scale.js time/format-utc.js
+transition/index.js: transition/transition.js
+xhr/index.js: xhr/xhr.js xhr/text.js xhr/json.js xhr/html.js xhr/xml.js
+xhr/text.js: xhr/xhr.js
+xhr/json.js: xhr/xhr.js
+xhr/html.js: core/document.js xhr/xhr.js
+xhr/xml.js: xhr/xhr.js
+end.js:

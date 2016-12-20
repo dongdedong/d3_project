@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Animated World Zoom</title>
+<style>
+    @import url(css/maps.css);
+
+    #control {
+        width: 960px;
+        margin: 0 auto;
+        text-align: right;
+        font-size: small;
+        font-style: italic;
+        color: #666;
+    }
+</style>
+
+<p class="breadcrumbs"><a href="http://www.jasondavies.com/">Jason Davies</a> → <a href="../">Maps</a>
+
+<h1>Animated World Zoom</h1>
+<div id="map"></div>
+<div id="control"><label for="north-up"><input type="checkbox" checked id="north-up"> North is up</label></div>
+
+<div class="wrapper">
+    <p>This is a variation of van Wijk and Nuij’s <a href="http://www.win.tue.nl/~vanwijk/zoompan.pdf">Smooth and efficient zooming and panning</a>.
+        The origin of the projection moves along a geodesic (the shortest path on a sphere) between the two points.
+
+    <p>You can also interact with the globe using a mouse or touch, as described in <a href="../rotate/">Rotate the World</a>.
+        The transition to a random country happens when a zoom gesture finishes.
+
+    <h2>See Also</h2>
+
+    <ul>
+        <li>Mike Bostock’s <a href="http://bl.ocks.org/mbostock/4183330">World Tour</a> and <a href="http://bl.ocks.org/mbostock/6242308">Map Zooming</a>.
+        <li>Many thanks to <a href="http://bost.ocks.org/mike">Mike Bostock</a> and <a href="http://www.win.tue.nl/~vanwijk/">Jack van Wijk</a> for their help and suggestions.
+    </ul>
+
+    <p class="cite">Data: Natural Earth <a href="http://www.naturalearthdata.com/downloads/110m-cultural-vectors/">1:110m Cultural Vectors</a>
+</div>
+
+<script src="../../js/d3.js"></script>
+<script src="js/topojson.min.js"></script>
+<script src="js/app.min.js"></script>

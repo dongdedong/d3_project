@@ -62,6 +62,7 @@
     <script>
 
 // Various accessors that specify the four dimensions of data to visualize.
+    //定义四个访问器指定四个维度的数据来可视化
     function x(d) { return d.income; }
     function y(d) { return d.lifeExpectancy; }
     function radius(d) { return d.population; }
@@ -74,12 +75,14 @@
         height = 500 - margin.top - margin.bottom;
 
     // Various scales. These domains make assumptions of data, naturally.
+    //定义比例尺，这些定义域让模拟数据更加自然
     var xScale = d3.scale.log().domain([300, 1e5]).range([0, width]),
         yScale = d3.scale.linear().domain([10, 85]).range([height, 0]),
         radiusScale = d3.scale.sqrt().domain([0, 5e8]).range([0, 40]),
         colorScale = d3.scale.category10();
 
     // The x & y axes.
+    //定义X轴Y轴
     var xAxis = d3.svg.axis().orient("bottom").scale(xScale).ticks(12, d3.format(",d")),
         yAxis = d3.svg.axis().scale(yScale).orient("left");
 
@@ -130,6 +133,7 @@
     d3.json("nations.json", function(nations) {
 
         // A bisector since many nation's data is sparsely-defined.
+        //二等分线生成器，因为很多国家的数据稀疏定义
         var bisect = d3.bisector(function(d) { return d[0]; });
 
         // Add a dot per nation. Initialize the data at 1800, and set the colors.
@@ -148,6 +152,7 @@
             .text(function(d) { return d.name; });
 
         // Add an overlay for the year label.
+        //为年度标签添加一个覆盖层。
         var box = label.node().getBBox();
 
         var overlay = svg.append("rect")
@@ -246,11 +251,5 @@
     });
 
     </script>
-    <script>
 
-        GoogleAnalyticsObject = "ga", ga = function() { ga.q.push(arguments); }, ga.q = [], ga.l = +new Date;
-        ga("create", "UA-48272912-3", "ocks.org");
-        ga("send", "pageview");
-
-    </script>
     <!--<script async src="//www.google-analytics.com/analytics.js"></script>-->
