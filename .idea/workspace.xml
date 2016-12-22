@@ -1,7 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa58825c-8658-43d0-8550-bb7c90fd1204" name="Default" comment="" />
+    <list default="true" id="fa58825c-8658-43d0-8550-bb7c90fd1204" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/css/dc.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/css/styles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/flare.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/payment.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/simple-flare.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/unemployment.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/us.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/data/world-50m.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/lib/crossfilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/lib/d3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/lib/dc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/lib/topojson.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/appendix-a/dc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/functional-js.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/d3-project-template.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/d3-project-template.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-ant/src/visualization.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/make" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/spec/core_spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/spec/spec_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/npm-dev-env-grunt/src/project.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/simple-dev-env/d3.v3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter1/simple-dev-env/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter10/drag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter10/mouse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter10/touch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter10/zoom.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/arbitrary-visualization.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/force-directed-graph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/gravity-and-charge.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/link-constraint.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/momentum-and-friction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter11/multi-foci.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter12/choropleth.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter12/usa.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter12/world.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/SpecRunner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/lib/jasmine-1.3.1/MIT.LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/lib/jasmine-1.3.1/jasmine-html.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/lib/jasmine-1.3.1/jasmine.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/lib/jasmine-1.3.1/jasmine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/spec/bar_chart_spec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/spec/spec_helper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/src/bar_chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter13/tdd-bar-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/function-chain.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/multiple-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/raw-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/selection-iteration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/single-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter2/sub-selection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/array-as-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/asyn-data-load.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/data-filter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/data-sort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/function-as-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/object-as-data.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter3/working-with-array.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/color-interpolation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/compound-interpolation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/custom-interpolator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/ordinal-scale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/quantitative-scales.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/string-interpolation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter4/time-scale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter5/basic-axes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter5/grid-line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter5/rescaling.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter5/ticks.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/chaining.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/custom-interpolator-transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/easing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/events.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/filtering.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/multi-element-transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/single-element-transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/timer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter6/tweening.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/arc-label.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/arc-transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/arc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/area-interpolation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/area.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/line-interpolation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/line-tension.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/line.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter7/simple-shapes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter8/area-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter8/bar-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter8/bubble-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter8/line-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter8/scatterplot-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/expanded-area-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/pack.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/pie-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/stacked-area-chart.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/streamgraph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d3-cookbook-master/src/chapter9/treemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery/html/14.0-d3-v4-modules/index.html" afterPath="$PROJECT_DIR$/gallery/html/14.0-d3-v4-modules/index.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -29,8 +146,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-425" />
-    <option name="y" value="320" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
   </component>
@@ -50,13 +167,85 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d3_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="d3_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="D:/nodejs/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="D:\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -69,30 +258,31 @@
       <option name="presentableId" value="Default" />
       <updated>1481871022040</updated>
       <workItem from="1481871024741" duration="13000" />
+      <workItem from="1482372545056" duration="262000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13000" />
+    <option name="totallyTimeSpent" value="275000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-425" y="320" width="1938" height="1050" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
