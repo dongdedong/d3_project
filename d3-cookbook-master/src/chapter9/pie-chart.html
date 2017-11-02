@@ -41,6 +41,7 @@
         }
 
         function renderPie() {
+            //创建圆形布局，并指定了数据的排序方式和取值
             var pie = d3.layout.pie() // <-A
                     .sort(function (d) {
                         return d.id;

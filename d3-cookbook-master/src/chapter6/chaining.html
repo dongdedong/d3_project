@@ -13,12 +13,12 @@
     var body = d3.select("body");
         
     function teleport(s){
-        s.transition().duration(300) // <-A
+        s.transition().duration(3000) // <-A
             .style("width", "200px")
             .style("height", "1px")
-        .transition().duration(100) // <-B
+        .transition().duration(1000) // <-B
             .style("left", "600px")
-        .transition().duration(300) // <-C
+        .transition().duration(3000) // <-C
             .style("left", "800px")
             .style("height", "80px")
             .style("width", "80px");
